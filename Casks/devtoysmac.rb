@@ -1,11 +1,16 @@
 cask "devtoysmac" do
-  version "V0.0.6"
-  sha256 "1770202ee4cb3bc45f2100992dceb308f606b130529d70d71abff1e11ad76f28"
+  version "0.0.11"
+  sha256 "84f6b354546b1731204deb48daed53caacab277b524bcdd8d5e47d53fc47b413"
 
-  url "https://github.com/ObuchiYuki/DevToysMac/releases/download/0.0.6/DevToys.zip"
+  url "https://github.com/DevToys-app/DevToysMac/releases/download/#{version}/DevToys.app.zip"
   name "DevToysMac"
   desc "This is the mac app version of Windows DevToys!"
-  homepage "https://github.com/ObuchiYuki/DevToysMac"
+  homepage "https://github.com/DevToys-app/DevToysMac"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   app "DevToys.app"
 
