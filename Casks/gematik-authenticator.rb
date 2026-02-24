@@ -1,8 +1,8 @@
 cask "gematik-authenticator" do
-  version "4.12.0"
-  sha256 "19d431bbb8f27cc827901f79b6ef5cc90a889f593c9365b576e458cd7c72f867"
+  version "4.15.2"
+  sha256 "04c92f9848d4abc7ffd2887d11305166e8453e46d0e2fb3eb994e63b9ab173b5"
 
-  url "https://github.com/gematik/app-Authenticator/releases/download/v#{version}/gematik-Authenticator-#{version}.dmg",
+  url "https://github.com/gematik/app-Authenticator/releases/download/#{version}/gematik-Authenticator-#{version}.dmg",
       verified: "github.com/gematik/app-Authenticator/"
   name "Gematik Authenticator"
   desc "Securely authenticate users for login to digital health applications"
